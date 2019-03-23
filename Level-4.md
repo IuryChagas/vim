@@ -2,7 +2,7 @@
 
 Command		| Description
 ---		| ---
-`50G or :50`	| Go to line 50
+`50G` or `:50`	| Go to line 50
 `G`		| Go to last line in file
 `gg`		| Go to first line in file
 `/iury`		| Search for "iury"
