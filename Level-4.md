@@ -10,7 +10,7 @@ Command		| Description
 `N`		| Go to previous search result
 `?chagas`	| Search backwards for "chagas"
 `ctrl`+`o`	| Jump to previous location (jump back)
-`ctrl+i`	| Jump to next location (jump forward)
+`ctrl`+`i`	| Jump to next location (jump forward)
 `%`		| Go to matching parentheses or brackets
 `:%s/bad/good`	| Replace 'bad' with 'good' in current line
 `:%s/hi/bye/g`	| Replace 'hi' with 'bye' in entire file
