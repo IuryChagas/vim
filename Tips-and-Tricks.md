@@ -13,3 +13,9 @@
 | 07. |Move cursor to the top of the current window | __H__ |
 | 08. |Move cursor to the  middle of the current window. | __M__ |
 | 09. |Jump to the matching brace "_when you’re editing code_" |  __%__ |
+
+## Recovering information
+
+| N° | DESCRIPTION | COMMAND |
+|--- |--- | --- |
+|10. | Open last edited file with the cursor on the last known position | __CTRL + o + o__ |
