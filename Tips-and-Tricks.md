@@ -19,3 +19,12 @@
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
 |10. | Open last edited file with the cursor on the last known position | __CTRL + o + o__ |
+
+## Shell commands
+
+| N° | DESCRIPTION | COMMAND |
+|--- |--- | --- |
+|11. | Run shell commands inside of it | __:r !__ |
+|ex: | To output the current month calendar | __:r !cal__ |
+|ex: | For the current date and time | __:r !date__ |
+
