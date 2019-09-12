@@ -36,3 +36,10 @@
 |ex: | interactive command history window. | __q:__ |
 |ex: | Then is a matter of choosing the command to run and executing it with | < CR > |
 
+## Compressed files
+
+| N° | DESCRIPTION | COMMAND |
+|--- |--- | --- |
+|13. | Open compressed file | __$vim archive.tar.gz__ |
+|ds: | _We can then open, edit and save those files without having to extract them._ | |
+
