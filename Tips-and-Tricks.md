@@ -43,3 +43,9 @@
 |13. | Open compressed file | __$vim archive.tar.gz__ |
 |ds: | _We can then open, edit and save those files without having to extract them._ | |
 
+##  Don’t know what a command does?
+
+| N° | DESCRIPTION | COMMAND |
+|--- |--- | --- |
+|14. | launch the manpage for the keyword | __K__ |
+
