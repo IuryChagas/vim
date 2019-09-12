@@ -55,3 +55,12 @@
 |--- |--- | --- |
 |15. | search for all occurrences of the word under the cursor | __*__ |
 
+## Indentation
+
+| N° | DESCRIPTION | COMMAND |
+|--- |--- | --- |
+|16. |indent our entire file according to the definition of tabs we’re using|__gg=G__|
+|17. | To take it a step further, <br>we can setup marks to indent an entire file and keep the cursor where it is |__mmgg=G’m__|
+|18. | search for all occurrences of ‘error’ in all .txt files |__:vimgrep error *.txt__|
+|19. | For more information on __*Vimgrep*__ |__:h vimgrep__|
+
