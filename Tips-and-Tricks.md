@@ -64,3 +64,11 @@
 |18. | search for all occurrences of ‘error’ in all .txt files |__:vimgrep error *.txt__|
 |19. | For more information on __*Vimgrep*__ |__:h vimgrep__|
 
+## Checking git branch  using Vim
+
+| N° | DESCRIPTION | COMMAND |
+|--- |--- | --- |
+|20. | see the contents of a given file in a different branch<br> without having to change into it | __git show__ branch_name:/path/to/file.txt | __vim -__|
+
+__git show__ branch_name:/path/to/file.txt __| vim -__
+ 
