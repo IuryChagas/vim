@@ -46,6 +46,12 @@
 ##  Don’t know what a command does?
 
 | N° | DESCRIPTION | COMMAND |
-|--- |--- | --- |
+|--- |--- | :---: |
 |14. | launch the manpage for the keyword | __K__ |
+
+## searching...
+
+| N° | DESCRIPTION | COMMAND |
+|--- |--- | --- |
+|15. | search for all occurrences of the word under the cursor | __*__ |
 
