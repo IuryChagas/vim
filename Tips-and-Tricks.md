@@ -28,3 +28,11 @@
 |ex: | To output the current month calendar | __:r !cal__ |
 |ex: | For the current date and time | __:r !date__ |
 
+## History
+
+| N° | DESCRIPTION | COMMAND |
+|--- |--- | --- |
+|12. | History of the last commands ran "_consultation only_" | __:history__ |
+|ex: | interactive command history window. | __q:__ |
+|ex: | Then is a matter of choosing the command to run and executing it with | < CR > |
+
