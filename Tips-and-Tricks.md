@@ -20,7 +20,7 @@
 | 14. | cut | __d__ |
 | 15. | cut a line | __dd__ |
 | 16. | cut two lines | __2dd__ |
-| 17. | Split the screen to see both files | __:vsplit/path-to-file/file__ |
+| 17. | Split the screen to see both files | **:vsplit/**_path-to-file_**/**_file_|
 
 ## Moving inside file
 
