@@ -37,32 +37,33 @@
 | 26. |Move cursor to the  middle of the current window. | __M__ |
 | 27. |Jump to the matching brace "_when you’re editing code_" |  __%__ |
 | 28. | Delete char at cursor | __x__ |
-| 29. | Insert at cursos | __i__ |
-| 30. | Insert beginning of line | __I__ |
-| 31. | Append at cursor | __a__ |
-| 32. | Append at end of line | __A__ |
-| 33. | Exit insert mode | __ESC__ |
-| 34. | Delete word | __dw__ |
-| 35. | Delete entire line and keep in normal mode | __D__ |
-| 36. | Next word | __w__ |
-| 37. | Go to '_x_' word forward | __n°w__ |
+| 29. | Replace word | __r__ |
+| 30. | Insert at cursos | __i__ |
+| 31. | Insert beginning of line | __I__ |
+| 32. | Append at cursor | __a__ |
+| 33. | Append at end of line | __A__ |
+| 34. | Exit insert mode | __ESC__ |
+| 35. | Delete word | __dw__ |
+| 36. | Delete entire line and keep in normal mode | __D__ |
+| 37. | Next word | __w__ |
+| 38. | Go to '_x_' word forward | __n°w__ |
 |_ex._| Go to two word forward | __2w__ |
-| 38. | Go to end of third word ahead | __3e__ |
+| 39. | Go to end of third word ahead | __3e__ |
 
 ## Recovering information
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 39. | Undo last change | __u__ |
-| 40. | Undo changes on entire line | __U__ |
-| 41. | Redo change | __Ctrl__ _+_ __r__ |
-| 42. | Open last edited file with the cursor on the last known position | __CTRL + o + o__ |
+| 40. | Undo last change | __u__ |
+| 41. | Undo changes on entire line | __U__ |
+| 42. | Redo change | __Ctrl__ _+_ __r__ |
+| 43. | Open last edited file with the cursor on the last known position | __CTRL + o + o__ |
 
 ## Shell commands
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 43. | Run shell commands inside of it | __:r !__ |
+| 44. | Run shell commands inside of it | __:r !__ |
 |_ex:_| To output the current month calendar | __:r !cal__ |
 |_ex:_| For the current date and time | __:r !date__ |
 
@@ -70,7 +71,7 @@
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 44. | History of the last commands ran "_consultation only_" | __:history__ |
+| 45. | History of the last commands ran "_consultation only_" | __:history__ |
 |_ex:_| interactive command history window. | __q:__ |
 |_ex:_| Then is a matter of choosing the command to run and executing it with | < CR > |
 
@@ -78,35 +79,35 @@
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 45. | Open compressed file | __$vim archive.tar.gz__ |
+| 46. | Open compressed file | __$vim archive.tar.gz__ |
 |_ds:_| _We can then open, edit and save those files without having to extract them._ | |
 
 ##  Don’t know what a command does?
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | :---: |
-| 46. | launch the manpage for the keyword | __K__ |
+| 47. | launch the manpage for the keyword | __K__ |
 
 ## searching...
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 47. | search for all occurrences of the word under the cursor | __*__ |
+| 48. | search for all occurrences of the word under the cursor | __*__ |
 
 ## Indentation
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 48. |indent our entire file according to the definition of tabs we’re using|__gg=G__|
-| 49. | To take it a step further, <br>we can setup marks to indent an entire file and keep the cursor where it is |__mmgg=G’m__|
-| 50. | search for all occurrences of ‘error’ in all .txt files |__:vimgrep error *.txt__|
-| 51. | For more information on __*Vimgrep*__ |__:h vimgrep__|
+| 49. |indent our entire file according to the definition of tabs we’re using|__gg=G__|
+| 50. | To take it a step further, <br>we can setup marks to indent an entire file and keep the cursor where it is |__mmgg=G’m__|
+| 51. | search for all occurrences of ‘error’ in all .txt files |__:vimgrep error *.txt__|
+| 52. | For more information on __*Vimgrep*__ |__:h vimgrep__|
 
 ## Checking git branch  using Vim
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-|52. | see the contents of a given file in a different branch<br> without having to change into it | __git show__ branch_name:/path/to/file.txt | __vim -__|
+|53. | see the contents of a given file in a different branch<br> without having to change into it | __git show__ branch_name:/path/to/file.txt | __vim -__|
 
 __git show__ branch_name:/path/to/file.txt __| vim -__
  
