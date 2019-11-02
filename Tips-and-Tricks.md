@@ -136,16 +136,17 @@
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 71. |indent our entire file according to the definition of tabs we’re using|__gg=G__|
-| 72. | To take it a step further, <br>we can setup marks to indent an entire file and keep the cursor where it is |__mmgg=G’m__|
-| 73. | search for all occurrences of ‘error’ in all .txt files |__:vimgrep error *.txt__|
-| 74. | For more information on __*Vimgrep*__ |__:h vimgrep__|
+| 71. |indent all the file. sellect all with __ggVG__ and use __=__|__ggVG__ _+_ __=__|
+| 72. |indent our entire file according to the definition of tabs we’re using|__gg=G__|
+| 73. | To take it a step further, <br>we can setup marks to indent an entire file and keep the cursor where it is |__mmgg=G’m__|
+| 74. | search for all occurrences of ‘error’ in all .txt files |__:vimgrep error *.txt__|
+| 75. | For more information on __*Vimgrep*__ |__:h vimgrep__|
 
 ## Checking git branch  using Vim
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 75. | see the contents of a given file in a different branch<br> without having to change into it | __git show__ branch_name:/path/to/file.txt | __vim -__|
+| 76. | see the contents of a given file in a different branch<br> without having to change into it | __git show__ branch_name:/path/to/file.txt | __vim -__|
 
 __git show__ branch_name:/path/to/file.txt __| vim -__
  
