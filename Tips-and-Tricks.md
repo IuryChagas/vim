@@ -77,31 +77,32 @@
 | 55. | Back to word like this |__N__|
 | 56. | Altern by uppercase/lowercase |__~__|
 | 57. | Change a word |__cw__|
-| 58. | Repeat the previous action |__.__|
+| 58. | Change all word |__caw__|
+| 59. | Repeat the previous action |__.__|
 
 ## On mode Visual
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 59. | To select word or paragraphs, just use |__h, j, k , l__|
-| 60. | Transform to lowercase |__u__|
-| 61. | Transform to Uppercase |__U__|
+| 60. | To select word or paragraphs, just use |__h, j, k , l__|
+| 61. | Transform to lowercase |__u__|
+| 62. | Transform to Uppercase |__U__|
 |_ex:_| Select word or paragraphs and use |__u__ or __U__|
 
 ## Recovering information
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 62. | Undo last change | __u__ |
-| 63. | Undo changes on entire line | __U__ |
-| 64. | Redo change | __Ctrl__ _+_ __r__ |
-| 65. | Open last edited file with the cursor on the last known position | __CTRL + o + o__ |
+| 63. | Undo last change | __u__ |
+| 64. | Undo changes on entire line | __U__ |
+| 65. | Redo change | __Ctrl__ _+_ __r__ |
+| 66. | Open last edited file with the cursor on the last known position | __CTRL + o + o__ |
 
 ## Shell commands
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 66. | Run shell commands inside of it | __:r !__ |
+| 67. | Run shell commands inside of it | __:r !__ |
 |_ex:_| To output the current month calendar | __:r !cal__ |
 |_ex:_| For the current date and time | __:r !date__ |
 
@@ -109,7 +110,7 @@
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 67. | History of the last commands ran "_consultation only_" | __:history__ |
+| 68. | History of the last commands ran "_consultation only_" | __:history__ |
 |_ex:_| interactive command history window. | __q:__ |
 |_ex:_| Then is a matter of choosing the command to run and executing it with | < CR > |
 
@@ -117,36 +118,36 @@
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 68. | Open compressed file | __$vim archive.tar.gz__ |
+| 69. | Open compressed file | __$vim archive.tar.gz__ |
 |_ds:_| _We can then open, edit and save those files without having to extract them._ | |
 
 ##  Don’t know what a command does?
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | :---: |
-| 69. | launch the manpage for the keyword | __K__ |
+| 70. | launch the manpage for the keyword | __K__ |
 
 ## searching...
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 70. | search for all occurrences of the word under the cursor | __*__ |
+| 71. | search for all occurrences of the word under the cursor | __*__ |
 
 ## Indentation
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 71. |indent all the file. sellect all with __ggVG__ and use __=__|__ggVG__ _+_ __=__|
-| 72. |indent our entire file according to the definition of tabs we’re using|__gg=G__|
-| 73. | To take it a step further, <br>we can setup marks to indent an entire file and keep the cursor where it is |__mmgg=G’m__|
-| 74. | search for all occurrences of ‘error’ in all .txt files |__:vimgrep error *.txt__|
-| 75. | For more information on __*Vimgrep*__ |__:h vimgrep__|
+| 72. |indent all the file. sellect all with __ggVG__ and use __=__|__ggVG__ _+_ __=__|
+| 73. |indent our entire file according to the definition of tabs we’re using|__gg=G__|
+| 74. | To take it a step further, <br>we can setup marks to indent an entire file and keep the cursor where it is |__mmgg=G’m__|
+| 75. | search for all occurrences of ‘error’ in all .txt files |__:vimgrep error *.txt__|
+| 76. | For more information on __*Vimgrep*__ |__:h vimgrep__|
 
 ## Checking git branch  using Vim
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 76. | see the contents of a given file in a different branch<br> without having to change into it | __git show__ branch_name:/path/to/file.txt | __vim -__|
+| 77. | see the contents of a given file in a different branch<br> without having to change into it | __git show__ branch_name:/path/to/file.txt | __vim -__|
 
 __git show__ branch_name:/path/to/file.txt __| vim -__
  
