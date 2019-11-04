@@ -77,7 +77,7 @@
 | 55. | Back to word like this |__N__|
 | 56. | Altern by uppercase/lowercase |__~__|
 | 57. | Change a word |__cw__|
-| 58. | Change all word |__caw__|
+| 58. | Change whole word |__caw__|
 | 59. | Repeat the previous action |__.__|
 
 ## On mode Visual
