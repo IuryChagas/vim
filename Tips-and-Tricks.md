@@ -127,11 +127,18 @@
 |--- |--- | :---: |
 | 70. | launch the manpage for the keyword | __K__ |
 
-## searching...
+## searching... and editing...
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| 71. | search for all occurrences of the word under the cursor | __*__ |
+| 71. | Search and Replace |__:s/1°/2°/g__|
+| ex. | Search and Replace |__:s/old/new/g__|
+|_ds:_| /Replacethisto/new |__/__|
+|_ds:_| /new change |__/__|
+|_ds:_| To global change |__/g__|
+|_ex:_| You can specify by lines >> |__:1,10%s/old/new/g__|
+|_ds:_| You will change all occurrences of **old** to **new** from line 1 up to line 10. |__:1,10%s/old/new/g__|
+|_ds:_| To search the entire file change the line numbers to a percent symbol: |__:%s/old/new__|
 
 ## Indentation
 
