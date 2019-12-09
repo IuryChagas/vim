@@ -20,7 +20,8 @@
 | . | cut | __d__ |
 | . | cut a line | __dd__ |
 | . | cut two lines | __2dd__ |
-| . | Split the screen to see both files | **:vsplit/**_path-to-file_**/**_file_|
+| . | Split screen to see both files vertically | **:vsplit** _file_|
+|_ex:_| Use **tab** after typed **_:vsplit_** to see files or directory options |**:vsplit OtherFile**|
 | . | Open file at last line **+**| **vim _fileName_ +**|
 | . | Open file and go to specific line **+n°**| **vim _fileName_ +8**|
 | . | Open two files splitted in horizontal columns **-o**| **vim -o _file1 file2_**|
@@ -33,16 +34,17 @@
 
 | N° | DESCRIPTION | COMMAND |
 |--- |--- | --- |
-| . |Jump to the end of the file | __G__ |
-| . |Jump to the beginning of it | __gg__ |
-| . |Move to a specific line | __123G__ _or_ __123gg__ or __122j__ or __122k__ |
-| . |Launch file on Vim already on specific line. | __$vim _**filename**_ +n°__ |
-| . |Move cursor to the beginning of the current line | __0__ |
-| . |Move cursor to the end of the current line | __$__ |
+| . | Jump to the end of the file | __G__ |
+| . | Go to last line of file _same effect of **G**_|**:$**|
+| . | Jump to the beginning of it | __gg__ |
+| . | Move to a specific line | __123G__ _or_ __123gg__ or __122j__ or __122k__ |
+| . | Launch file on Vim already on specific line. | __$vim _**filename**_ +n°__ |
+| . | Move cursor to the beginning of the current line | __0__ |
+| . | Move cursor to the end of the current line | __$__ |
 | . | Move cursor to beginning of text on current line | __^__ |
-| . |Move cursor to the top of the current window | __H__ |
-| . |Move cursor to the  middle of the current window. | __M__ |
-| . |Jump to the matching brace "_when you’re editing code_" |  __%__ |
+| . | Move cursor to the top of the current window | __H__ |
+| . | Move cursor to the  middle of the current window. | __M__ |
+| . | Jump to the matching brace "_when you’re editing code_" |  __%__ |
 | . | Delete char at cursor | __x__ |
 | . | Replace word | __r__ |
 | . | Insert at cursos | __i__ |
@@ -54,14 +56,23 @@
 | . | Delete entire line and keep in normal mode | __D__ |
 | . | Next word | __w__ |
 | . | Go to '_x_' word forward | __n°w__ |
-|_ex._| Go to two word forward | __2w__ |
+|_ex:_| Go to two word forward | __2w__ |
 | . | Go to end of third word ahead | __3e__ |
 | . | Salve **all** files and close files | __:wqa__ |
 | . | navigate on file to up | __Ctrl__+__u__|
 | . | navigate on file to down | __Ctrl__+__d__|
-| . | navigate between paragraphs, to up |__{__|
-| . | navigate between paragraphs, to down |__}__|
+| . | navigate between paragraphs block, to up |__{__|
+| . | navigate between paragraphs block, to down |__}__|
+| . | Jump to next paragraph, to Up **shift + (** |**shift (**|
+| . | Jump to next paragraph, to Down **shitft + )** |**shift )**|
 | . | Navigate using context with |__%__|
+| . | Set lines with position numbers _**nu!**_ or _**number**_ |**:set nu!**|
+| . | Go to especific line **n°** |**:5**|
+|_ex:_| **:55** _Jump to 55 line_ |_line 55_|
+| . | Save a specific excerpt from inside the file |**:5,10w newFileToSave.md**|
+|_ds_| inside the file type _initial n°_, _final n°_**w** **NewFileName.extension** |**:5,10w newFileName.md**|
+|_ds_| the content at line 5 to line 10 will be saved in newFileName.md |
+| . | To subwrite an existing file _:n°w! nameExistingFile.extension_|**:1,5w! nameExistingFile.md**|
 
 ## Moving and editing inside line
 
@@ -86,7 +97,12 @@
 | . | Change a word |__cw__|
 | . | Change whole word |__caw__|
 | . | Repeat the previous action |__.__|
-
+| . | Sellect all with |**ggVG**|
+| . | Delete x first lines |**:d19**|
+|_ds_| _note!_ depends on the current cursor position. |**:d19**|
+|_ds_| _If at the beginning of the file. 19 first lines will be deleted_ |**:d19**|
+|_ds_| _If at end of file_. 10 last lines will be deleted_ |**:d10**|
+ 
 ## On mode Visual
 
 | N° | DESCRIPTION | COMMAND _init v_|
@@ -147,6 +163,20 @@
 |_ex:_| You can specify by lines >> |__:1,10%s/old/new/g__|
 |_ds:_| You will change all occurrences of **old** to **new** from line 1 up to line 10. |__:1,10%s/old/new/g__|
 |_ds:_| To search the entire file change the line numbers to a percent symbol: |__:%s/old/new__|
+| . | Search specific word. _ex_ **lorem** |**/lorem**|
+|_ds_| _The vim search mechanics is case sensitive_|
+|_ds_|_To next occurrence of word, press **Enter** after typed /lorem_ and press **n** to occurrences down |**n**|
+|_ds_|_To next occurrence of word, press **Enter** after typed /lorem_ and press **shift + n** to occurrences Up |**N**|
+| . | Editing file with vim without leaving the command line. _Ex:_ | **vi -c ":% s/word/NewWord/g" -c ":x" file.txt** |
+| . | To see more information about vim map |**:map**|
+
+## Mapping
+
+| N° | DESCRIPTION | COMMAND |
+|--- |--- | --- |
+| . | Commands mapping, ex ggVG to select all text |**:map `<F12>` ggVG**|
+|_ds_| The command key **F12** is set to run like ggVG. _"select all text file"_ now |**F12** _is the same_ **ggVG**|
+|_ds_| Other example _to select all text_ now with `Ctrl` + `a` |**:map `C-a` ggVG**|
 
 ## Indentation
 
