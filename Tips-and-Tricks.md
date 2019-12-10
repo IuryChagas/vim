@@ -126,6 +126,7 @@
 | . | Undo changes on entire line | __U__ |
 | . | Redo change | __Ctrl__ _+_ __r__ |
 | . | Open last edited file with the cursor on the last known position | __CTRL + o + o__ |
+| . | Insert another text file inside the current file |**:read anotherTextFile.extension**_and press_ Enter|
 
 ## Shell commands
 
