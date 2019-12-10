@@ -116,6 +116,7 @@
 | . | commnet multiple lines `ctrl`+`v` + `n°`+`j`, `shift`+`i` + `symbol` + `Esc` + `Esc`|**V** + **20j** + **shift i** + **#** + **Esc** + **Esc**|
 | .| comment multiple lines with Regex `:InitLine,LastLine s/^/symbol/g` ex:|**:9,23 s/^/#/g**|
 |_ds_| `s` = substitute. `^` = beginning of line. `#` = symbol to comment in vi. `g` = globally | |
+| . | Compare modifications between files |**vimdiff file-vs1 file2-vs2**|
 
 ## Recovering information
 
@@ -140,7 +141,7 @@
 |--- |--- | --- |
 | . | History of the last commands ran "_consultation only_" | __:history__ |
 |_ex:_| interactive command history window. | __q:__ |
-|_ex:_| Then is a matter of choosing the command to run and executing it with | < CR > |
+|_ex:_| Then is a matter of choosing the command to run and executing it with | `<CR>` |
 
 ## Compressed files
 
