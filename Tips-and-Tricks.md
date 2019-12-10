@@ -113,6 +113,9 @@
 | . | Transform to Uppercase |__U__|
 |_ex:_| Select word or paragraphs and use |__u__ or __U__|
 | . | reverse selected lines order |__!tac__|
+| . | commnet multiple lines `ctrl`+`v` + `n°`+`j`, `shift`+`i` + `symbol` + `Esc` + `Esc`|**V** + **20j** + **shift i** + **#** + **Esc** + **Esc**|
+| .| comment multiple lines with Regex `:InitLine,LastLine s/^/symbol/g` ex:|**:9,23 s/^/#/g**|
+|_ds_| `s` = substitute. `^` = beginning of line. `#` = symbol to comment in vi. `g` = globally | |
 
 ## Recovering information
 
