@@ -22,7 +22,8 @@
 | . | cut two lines | __2dd__ |
 | . | Split screen to see both files vertically | **:vsplit** _file_|
 |_ex:_| Use **tab** after typed **_:vsplit_** to see files or directory options |**:vsplit OtherFile**|
-| . | Open file at last line **+**| **vim _fileName_ +**|
+| . | Open file at last line **+** _or_ **$**| **vim _fileName_ +**|
+|_ex:_| Open file at last line **$** _or_ **+**| **vim _fileName_ $**|
 | . | Open file and go to specific line **+n°**| **vim _fileName_ +8**|
 | . | Open two files splitted in horizontal columns **-o**| **vim -o _file1 file2_**|
 | . | Switch between files _Ctrl + ww_|**Ctrl ww**|
