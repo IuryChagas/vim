@@ -126,7 +126,7 @@
 | . | Undo changes on entire line | __U__ |
 | . | Redo change | __Ctrl__ _+_ __r__ |
 | . | Open last edited file with the cursor on the last known position | __CTRL + o + o__ |
-| . | Insert another text file inside the current file |**:read anotherTextFile.extension**_and press_ Enter|
+| . | Insert another text file inside the current file |**:read anotherTextFile.extension**|
 
 ## Shell commands
 
@@ -191,8 +191,9 @@
 | . |indent all the file. sellect all with __ggVG__ and use __=__|__ggVG__ _+_ __=__|
 | . |indent our entire file according to the definition of tabs we’re using|__gg=G__|
 | . | To take it a step further, <br>we can setup marks to indent an entire file and keep the cursor where it is |__mmgg=G’m__|
-| . | search for all occurrences of ‘error’ in all .txt files |__:vimgrep error *.txt__|
+| . | search for all occurrences of ‘error’ in all .txt files |__:vimgrep error `*`.txt__|
 | . | For more information on __*Vimgrep*__ |__:h vimgrep__|
+| . | Code indentation and auto indent, _select all text and.._ |**==** _or_ **gg=G**|
 
 ## Checking git branch  using Vim
 
