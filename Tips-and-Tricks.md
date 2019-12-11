@@ -127,6 +127,11 @@
 | . | Redo change | __Ctrl__ _+_ __r__ |
 | . | Open last edited file with the cursor on the last known position | __CTRL + o + o__ |
 | . | Insert another text file inside the current file |**:read anotherTextFile.extension**|
+| . | To locate `.vimrc` file |**:echo $MYVIMRC**|
+| . | Create the `.vimrc` from vim itself |**:mkvimrc**|
+| . | To run commands bash inside the vim itself |**:! rm .vimrc**|
+| . | Other way to do the same thing above `:silent !command` ex|**:silent !ls**|
+| . | _or_ `:r` `!commandBash`, _Output will be inside a new file_ ex|**:r !ls -all**|
 
 ## Shell commands
 
